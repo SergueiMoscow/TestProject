@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         initForms()
 
         loginBtn.setOnClickListener{
-
             val login = emailText.text.toString()
             val pass = passText.text.toString()
 
