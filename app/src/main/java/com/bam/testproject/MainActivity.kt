@@ -16,12 +16,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        people = People("dfsf", 45)
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.screen2)
         initForms()
 
         loginBtn.setOnClickListener{
@@ -36,6 +30,13 @@ class MainActivity : AppCompatActivity() {
                 showNotification("Error")
             }
         }
+
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.screen2)
+
 
     }
 
